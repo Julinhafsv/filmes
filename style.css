@@ -1,0 +1,130 @@
+:root {
+	--muito-escuro: black;
+	--escuro: dimgray;
+	--claro: white;
+	--vermelho: crimson;
+}
+
+/* Ajustes Gerais */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: georgia, serif;
+	background: linear-gradient(black, dimgray, black);
+}
+
+/* Cabeçalho e Rodapé */
+header, footer {
+	width: 100%;
+	padding: 30px;
+	overflow: hidden;
+	text-align: center;
+	background: black;
+}
+
+footer {
+	text-align: right;
+	padding-top: 65px;
+	color: silver;
+}
+
+header h1 {
+	color: crimson;
+	text-transform: uppercase;
+}
+
+header p {
+	color: white;
+}
+
+/* Barra de Navegação */
+#navbar {
+	width: 100%;
+	overflow: hidden;
+	background: crimson;
+}
+
+#navbar ul {
+	list-style-type: none; /* Tira as Bolinhas */
+	margin: 0;
+	padding: 0;
+}
+
+#navbar ul li {
+	float: left; /* Pra ficar um do lado do outro */
+}
+
+#navbar ul li a {
+	text-decoration: none; /* Tira formatação de Link */
+	padding: 15px 15px;
+	display: block;
+	color: white;
+}
+
+#navbar ul li a:hover {
+	color: crimson;
+	background: black;
+}
+
+/* Coluna Laterais */
+.coluna {
+	width: 20%;
+	padding: 20px;
+	float: left;
+}
+
+.coluna p {
+	color: white;
+}
+
+.coluna ol {
+	color: white;
+}
+
+.coluna a { /* Link não Visitado */
+ 	color: white;
+ 	text-decoration: none;
+}
+
+.coluna a:visited { /* Link Visitado */
+ 	color: crimson;
+}
+
+/* Coluna Central */
+article {
+	width: 60%;
+	padding: 20px;
+	float: left;
+	background: white;
+}
+
+article p {
+	text-align: justify;
+}
+
+/* Responsividade */
+
+/* Telas Médias */
+@media screen and (max-width: 800px) {
+	.coluna {
+		width: 30%;
+	}
+
+	article {
+		width: 70%;
+	}
+}
+
+/* Telas Pequenas */
+@media screen and (max-width: 600px) {
+	.coluna {
+		width: 100%;
+	}
+
+	article {
+		width: 100%;
+	}
+}
